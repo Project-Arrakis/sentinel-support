@@ -1,0 +1,67 @@
+name: Compatibility Report
+description: The bot doesn't work correctly with a specific environment, dependency, or version combination.
+title: "[Compatibility]: "
+labels:
+  - "type:compatibility"
+  - "status:needs-triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for problems that are specific to a particular
+        environment or dependency version — not general bugs (use the Bug
+        Report form for those).
+
+  - type: input
+    id: acp-version
+    attributes:
+      label: ACP version
+      placeholder: "v1.0.0-rc.3"
+    validations:
+      required: true
+
+  - type: input
+    id: affected-dependency
+    attributes:
+      label: Affected dependency
+      description: The external component this is incompatible with (Node.js, Docker, Discord client, the game server itself, a specific OS, etc.).
+    validations:
+      required: true
+
+  - type: input
+    id: dependency-version
+    attributes:
+      label: Dependency version
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Full environment details — OS, container runtime, architecture (x86_64/arm64), etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Observed behavior
+      description: What actually happens with this combination?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-compatibility
+    attributes:
+      label: Expected compatibility
+      description: What did you expect to work, and why (e.g. documented support, worked in a previous version)?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true

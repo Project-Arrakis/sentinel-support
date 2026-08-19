@@ -1,0 +1,114 @@
+name: Bug Report
+description: Something in the ACP Discord bot isn't working the way it should.
+title: "[Bug]: "
+labels:
+  - "type:bug"
+  - "status:needs-triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+
+        **Security note:** do not include passwords, Discord tokens, API
+        tokens, private keys, session IDs, credentials, or other secrets
+        anywhere in this report — including in logs or screenshots. If
+        you believe you have found a security vulnerability, stop here and
+        follow [SECURITY.md](../../SECURITY.md) instead of filing a public
+        issue.
+
+  - type: input
+    id: acp-version
+    attributes:
+      label: ACP version
+      description: The bot version or release you are running (see `/dune core about`, or your setup portal).
+      placeholder: "v1.0.0-rc.3"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install-method
+    attributes:
+      label: Deployment / install method
+      options:
+        - Hosted bot (setup portal at acp-setup.darkdante.org)
+        - Self-hosted (Docker)
+        - Self-hosted (Node.js directly)
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Operating environment
+      description: Discord client (desktop/mobile/web), OS, and any other environment detail relevant to reproducing this.
+      placeholder: "Discord desktop client on Windows 11, server region ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Exact steps to reproduce, in order.
+      placeholder: |
+        1. Run `/dune server readiness`
+        2. ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      options:
+        - Every time
+        - Most of the time
+        - Sometimes
+        - Happened once
+    validations:
+      required: true
+
+  - type: dropdown
+    id: regression
+    attributes:
+      label: Regression status
+      description: Did this used to work in a previous version?
+      options:
+        - "Yes — this is a regression from a previous version"
+        - "No — this has never worked"
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      description: >
+        Relevant log output, with all tokens/secrets/hostnames/IPs removed
+        or replaced with placeholders. Do not paste raw `.env` files.
+      render: shell
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Anything else that might help (screenshots with secrets already removed, related issues, etc.).
