@@ -8,6 +8,6 @@
     "node": ">=20.18.0"
   },
   "scripts": {
-    "test": "node --test --test-reporter=spec .github/scripts/issue-bridge"
+    "test": "node scripts/run-tests.js"
   }
 }
