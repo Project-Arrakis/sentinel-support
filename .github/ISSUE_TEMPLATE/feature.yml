@@ -1,0 +1,68 @@
+name: Feature Request
+description: Suggest new capability for the ACP Discord bot.
+title: "[Feature]: "
+labels:
+  - "type:feature"
+  - "status:needs-triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement. Please note that new
+        capability is evaluated and prioritized by the ACP team; filing a
+        request does not guarantee it will be built or scheduled.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem are you trying to solve? What's frustrating or missing today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-capability
+    attributes:
+      label: Proposed capability
+      description: What would you like the bot to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case
+      description: A concrete example of how you (or your server) would use this.
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Expected benefit
+      description: Who benefits, and how?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any workarounds or alternative approaches you've already tried or considered.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this to you?
+      options:
+        - Nice to have
+        - Would meaningfully improve my usage
+        - Blocking a real workflow for my server
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional information
+      description: Anything else useful — mockups, related commands, links to similar features elsewhere.
