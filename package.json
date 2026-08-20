@@ -1,0 +1,13 @@
+{
+  "name": "acp-discordbot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public community, Issues, Discussions, and release-information repository for the Arrakis Control Panel Discord Bot. Contains no ACP application source — only the ACP Issue Bridge automation, issue templates, and documentation.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.18.0"
+  },
+  "scripts": {
+    "test": "node scripts/run-tests.js"
+  }
+}

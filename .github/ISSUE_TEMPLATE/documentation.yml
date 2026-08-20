@@ -1,0 +1,43 @@
+name: Documentation Issue
+description: Something in the docs is missing, unclear, or wrong.
+title: "[Docs]: "
+labels:
+  - "type:documentation"
+  - "status:needs-triage"
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Documentation location
+      description: A URL or file path to the page/section in question.
+      placeholder: "docs/user-guide.md#readiness"
+    validations:
+      required: true
+
+  - type: input
+    id: affected-version
+    attributes:
+      label: Affected version
+      description: The ACP version this documentation describes (if known).
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Incorrect or missing information
+      description: What's wrong, missing, or confusing?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected documentation
+      description: What should it say instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-correction
+    attributes:
+      label: Suggested correction
+      description: If you have specific replacement text or a proposed rewrite, include it here.

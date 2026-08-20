@@ -1,0 +1,14 @@
+title = "gitleaks config"
+
+[allowlist]
+description = "Allowlisted paths and patterns"
+paths = [
+  # ACP Issue Bridge automation lives entirely under .github/ in this repo
+  # and contains no application secrets — the only findings here are the
+  # bridge's own secret-scanner test fixtures (deliberately fake JWT/AWS/
+  # Stripe-shaped example values used to verify scanForSensitiveContent()
+  # actually detects these patterns; see secretScan.test.js). Same
+  # allowlist precedent already used in yacketrj/arrakis-control-panel's
+  # .gitleaks.toml. Verified 2026-08-19.
+  '''\.github/''',
+]
