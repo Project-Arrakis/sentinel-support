@@ -24,3 +24,13 @@ Arrakis Control Panel application itself, which is versioned separately.
 - `SECURITY.md`, `SUPPORT.md`, `CONTRIBUTING.md`, and a full `README.md`
   clarifying this repository's scope (no ACP application source).
 - `CI` and `Security Gates` (Semgrep, Gitleaks) workflows.
+
+### Fixed
+- `scripts/run-tests.js`'s CI test-discovery bug (Node 22 does not
+  recurse into a bare dot-directory the way Node 20 does) — see
+  yacketrj/arrakis-control-panel's identical fix for the full writeup.
+- Outbound secret scanner (`lib/secretScan.mjs`) false-negative: a real
+  secret was wrongly exempted whenever a placeholder-shaped word (e.g.
+  `example`) appeared as a hyphen/underscore-bounded substring anywhere
+  within it. Fixed by anchoring the placeholder exclusion to the entire
+  captured value only.
