@@ -8,15 +8,14 @@ Arrakis Control Panel application itself, which is versioned separately.
 ## Unreleased
 
 ### Changed
-- ACP Issue Bridge config (`.github/acp-issue-bridge.yml`) repoints
-  `repositories.private` from `yacketrj/arrakis-control-panel` to
-  `Project-Arrakis/sentinel` (issue #228 in the engineering repo, now at
-  `Project-Arrakis/sentinel#228`) — the private repo has since actually
-  transferred to `Project-Arrakis` **and been renamed from
-  `arrakis-control-panel` to `sentinel`**. This repo (`acp-discordbot`)
-  has not transferred yet. **Not yet live** — merging is deliberately
-  deferred until the GitHub App is reinstalled under `Project-Arrakis`
-  and this repo also transfers; see the engineering repo's
+- ACP Issue Bridge config (`.github/acp-issue-bridge.yml`) repoints both
+  `repositories.private` and `repositories.public` (issue #228 in the
+  engineering repo, now at `Project-Arrakis/sentinel#228`) — both this
+  repo and the private engineering repo have transferred to
+  `Project-Arrakis` **and been renamed** (`arrakis-control-panel` →
+  `sentinel`, this repo `acp-discordbot` → `sentinel-support`). **Not yet
+  live** — merging is deliberately deferred until the GitHub App is
+  reinstalled under `Project-Arrakis`; see the engineering repo's
   `docs/issue-bridge/github-app.md` "Org migration" section for the exact
   manual sequencing and current status.
 
