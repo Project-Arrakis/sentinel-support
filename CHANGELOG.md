@@ -7,6 +7,16 @@ Arrakis Control Panel application itself, which is versioned separately.
 
 ## Unreleased
 
+### Changed
+- ACP Issue Bridge config (`.github/acp-issue-bridge.yml`) repoints
+  `repositories.public`/`repositories.private` from `yacketrj/...` to
+  `Project-Arrakis/...`, ahead of this repo's planned org transfer
+  (arrakis-control-panel#228). **Not yet live** — merging is deliberately
+  deferred until the GitHub App is reinstalled under the `Project-Arrakis`
+  org and both repos actually transfer; see the engineering repo's
+  `docs/issue-bridge/github-app.md` "Org migration" section for the exact
+  manual sequencing.
+
 ### Added
 - **ACP Issue Bridge** — the public-repository side of a fail-closed
   synchronization system with the ACP engineering repository. Public
