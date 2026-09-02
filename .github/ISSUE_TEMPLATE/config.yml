@@ -1,13 +1,13 @@
 blank_issues_enabled: false
 contact_links:
   - name: Security vulnerability report
-    url: https://github.com/yacketrj/acp-discordbot/security/policy
+    url: https://github.com/Project-Arrakis/mentat-adjutant/security/policy
     about: >
       Security vulnerabilities must not be reported through public GitHub
       Issues or Discussions. See SECURITY.md for how to report privately.
   - name: Support question / "how do I...?"
-    url: https://github.com/yacketrj/acp-discordbot/discussions/categories/q-a
+    url: https://github.com/Project-Arrakis/mentat-adjutant/discussions/categories/q-a
     about: For usage questions and troubleshooting, use Discussions Q&A instead of an issue.
   - name: General discussion / ideas
-    url: https://github.com/yacketrj/acp-discordbot/discussions
+    url: https://github.com/Project-Arrakis/mentat-adjutant/discussions
     about: For open-ended discussion, ideas, and show-and-tell that isn't a specific bug/feature/compatibility/docs report.
