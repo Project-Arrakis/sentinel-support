@@ -35,7 +35,7 @@ jobs:
         with:
           app-id: ${{ secrets.ACP_ISSUE_BRIDGE_APP_ID }}
           private-key: ${{ secrets.ACP_ISSUE_BRIDGE_PRIVATE_KEY }}
-          repositories: arrakis-control-panel
+          repositories: mentat
           permission-issues: write
           permission-metadata: read
 
